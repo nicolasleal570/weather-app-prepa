@@ -3,12 +3,6 @@ const inputElement = document.getElementById("mainInput");
 const buttonElement = document.getElementById("searchButton");
 const resultsContainerElem = document.getElementById("results");
 
-// Esta funcion se ejecuta luego de 2 segundos (2000ms)
-// setTimeout(() => {
-//     titleElement.textContent = 'Hola mundo'
-//     titleElement.style = 'background-color: red;'
-// }, 2000)
-
 const API_ID = "281475fb650b835c4e384500d6b9b7f3";
 
 function printResults(data) {
@@ -16,6 +10,8 @@ function printResults(data) {
   const { humidity, pressure, temp } = main;
   const { country } = sys;
   const { speed } = wind;
+
+  console.log("HOLA MUNDo")
 
   resultsContainerElem.innerHTML += `
         <section class="results-box">
@@ -44,21 +40,7 @@ function printResults(data) {
 }
 
 buttonElement.addEventListener("click", async () => {
-  // const value = inputElement.value
   const { value } = inputElement;
-
-  //   fetch(
-  //     `https://api.openweathermap.org/data/2.5/weather?appid=${API_ID}&q=${value}`
-  //   )
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((data) => {
-  //       printResults(data);
-  //     })
-  //     .catch((err) => {
-  //       console.log(err);
-  //     });
 
   try {
     const response = await fetch(
