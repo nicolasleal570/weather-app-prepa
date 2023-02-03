@@ -11,8 +11,6 @@ function printResults(data) {
   const { country } = sys;
   const { speed } = wind;
 
-  console.log("HOLA MUNDo")
-
   resultsContainerElem.innerHTML += `
         <section class="results-box">
             <div class="result-item">
