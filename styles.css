@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap");
+
+/* ESTANDARIZAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #1a202c;
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  margin: 112px 0 8px 0;
+}
+
+.main-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.search-box {
+  background-color: #ffffff;
+  width: 90%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+.search-field {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  padding-left: 8px;
+}
+
+.search-field::placeholder {
+  color: #a0aec0;
+}
+
+.search-button {
+  border: none;
+  outline: none;
+  padding: 12px 24px;
+  border-radius: 0px 6px 6px 0px;
+  background: #718096;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.results-box {
+  width: 90%;
+  background: #fff;
+  margin: 0 auto;
+  margin-top: 16px;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.result-item {
+  margin-bottom: 8px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #1a202c;
+}
+
+.value {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #718096;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .search-box {
+    width: 50%;
+  }
+  .results-box {
+    width: 50%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .search-box {
+    width: 440px;
+    height: 48px;
+  }
+
+  .results-box {
+    width: 440px;
+  }
+}
